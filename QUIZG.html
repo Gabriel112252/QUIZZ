@@ -3,39 +3,43 @@
 
     <head>
         <script src="js/jquery-3.3.1.min.js"></script>
-        <link rel="stylesheet" href="css/default.css">
-        <script src="tools/indice.js"></script>
-        <script>var current_class="exercicio5";</script>
-        <script src="highlight/highlight.pack.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Folha de Exercícios 5</title>
+        <title>Create Quiz</title>
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    
+        <style src= 'css'></style>
+        <link rel ="stylesheet" href="css/bootstrap.css">
     </head>
 
     <body>
 
-      <h1>VIDEO GAMES</h1>
-                <h3 id="pergunta"></h3>
-
-                <form id="opcoes">
-                    
-
-                </form>
-
-                <p id="erro_acerto"></p>   <!--texto para informar resultado da pergunta-->
-
-                <p id="placar"></p>
-
-                <button style="display: none;" id= "submeter">Enviar Resposta</button>
-                <button style="display: none;" id= "nova_pergunta">Nova Pergunta</button>
-
-              
-        <script src="js/QUIZG.js"></script>
+      <h1>NARUQUIZ</h1>
+      <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Questão</label>
+            <input type="text" class="form-control" id="questao">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Resposta certa</label>
+            <input type="text" class="form-control" id="correta">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Alternativa errada</label>
+            <input type="text" class="form-control" id="incorreta">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Alternativa errada</label>
+            <input type="text" class="form-control" id="incorretb">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Alternativa errada</label>
+            <input type="text" class="form-control" id="incorretc">
+        </div>
+            
+        <button type = "button" class="btn btn-primary" id= "submeter">Gravar</button>
+      </form>
+        <script src="js/create.js"></script>
 
     </body>
 
