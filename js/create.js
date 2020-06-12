@@ -3,7 +3,10 @@ $("#submeter").click(function(){
     resposta_correta = $("#correta").val(),
     resposta_incorreta = $("#incorreta").val(),
     resposta_incorretb = $("#incorretb").val(),
-    resposta_incorretc = $("#incorretc").val(),
+    resposta_incorretc = $("#incorretc").val();
+    if(enunciado== ''){
+      alert('A pergunta ta em branco mano =(');
+    }else{
     question = {}
     var param = {
         question: {
@@ -13,6 +16,7 @@ $("#submeter").click(function(){
                 incorrectb:resposta_incorretb,
                 incorrectc:resposta_incorretc
              }
+        }
     }
 $.post("https://serene-garden-00468.herokuapp.com/questions/",
         param,
